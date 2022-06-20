@@ -27,11 +27,6 @@ To build a new Bentonow client:
 client = Bentonow::Client.new(publishable_key, secret_key)
 ```
 
-To build a new Bentonow client:
-```crystal
-client = Bentonow::Client.new(publishable_key, secret_key)
-```
-
 ## Endpoints
 Most useful available Bentonow API resources are implemented.
 
@@ -51,4 +46,4 @@ event = Bentonow::Event.create_event(publishable_key, secret_key, site_uuid, bod
 
 ## Contributors
 
-- [paula4230](https://github.com/your-github-user) - creator and maintainer
+- [Pauline De Polonia](https://github.com/your-github-user) - creator and maintainer
