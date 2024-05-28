@@ -2,7 +2,7 @@ module Bentonow
   class Client
     BASE_URI = "app.bentonow.com"
 
-    def initialize(@publishable_key, @secret_key)
+    def initialize(@publishable_key : String, @secret_key : String)
     end
 
     def reset_client
