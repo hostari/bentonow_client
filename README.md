@@ -22,7 +22,7 @@ Set the following api keys in `.env`: `publishable_key`, `secret_key`, `site_uui
 require "bento_client"
 ```
 
-To build a new Bentonow client:
+To build a new Bento client:
 ```crystal
 publishable_key = ENV["BENTO_PUBLISHABLE_KEY"]
 secret_key = ENV["BENTO_SECRET_KEY"]
@@ -30,7 +30,7 @@ client = Bento::Client.new(publishable_key, secret_key)
 ```
 
 ## Endpoints
-Most useful available Bentonow API resources are implemented.
+Most useful available Bento API resources are implemented.
 
 1. [Creating an Event](https://docs.bentonow.com/reference-api/create-events) - for single or batch processing of events such as adding users and other user information, adding tags to already exisiting users, or adding fields to existing users.
 
@@ -78,7 +78,7 @@ body = {
   ]
 }.to_json
 site_uuid = ENV["BENTO_SITE_UUID"]
-event = Bentonow::Event.create_event(publishable_key, secret_key, site_uuid, body)
+event = Bento::Event.create_event(publishable_key, secret_key, site_uuid, body)
 ```
 
 ## Contributing
