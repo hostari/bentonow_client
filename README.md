@@ -1,6 +1,6 @@
-# bentonow_client
+# bento_client
 
-A crystal lang wrapper for the [Bentonow API](https://bentonow.com/).
+A crystal lang wrapper for the [Bento API](https://bentonow.com/).
 
 ## Installation
 
@@ -8,8 +8,8 @@ A crystal lang wrapper for the [Bentonow API](https://bentonow.com/).
 
    ```yaml
    dependencies:
-     bentonow_client:
-       github: hostari/bentonow_client
+     bento_client:
+       github: hostari/bento_client
    ```
 
 2. Run `shards install`
@@ -19,14 +19,14 @@ A crystal lang wrapper for the [Bentonow API](https://bentonow.com/).
 Set the following api keys in `.env`: `publishable_key`, `secret_key`, `site_uuid`.
 
 ```crystal
-require "bentonow_client"
+require "bento_client"
 ```
 
 To build a new Bentonow client:
 ```crystal
 publishable_key = ENV["BENTO_PUBLISHABLE_KEY"]
 secret_key = ENV["BENTO_SECRET_KEY"]
-client = Bentonow::Client.new(publishable_key, secret_key)
+client = Bento::Client.new(publishable_key, secret_key)
 ```
 
 ## Endpoints
@@ -83,7 +83,7 @@ event = Bentonow::Event.create_event(publishable_key, secret_key, site_uuid, bod
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/bentonow_client/fork>)
+1. Fork it (<https://github.com/hostari/bento_client/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
