@@ -1,2 +1,2 @@
 require "spec"
-require "../src/bentonow_client"
+require "../src/bento_client"

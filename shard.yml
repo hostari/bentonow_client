@@ -1,6 +1,7 @@
-name: bentonow_client
-version: 1.0.3
+name: bento_client
+version: 1.1.0
 authors:
+  - Pauline De Polonia <paudepolonia000@yahoo.com>
   - Xavi Ablaza <xavi@hostari.com>
-crystal: ~> 1.14.0
+crystal: ~> 1.16.3
 license: MIT

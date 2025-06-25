@@ -1,4 +1,4 @@
-module Bentonow
+module Bento
   class Client
     BASE_URI = "app.bentonow.com"
 
